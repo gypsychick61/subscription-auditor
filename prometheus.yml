@@ -16,7 +16,7 @@ submission:
   deployment_type: global
   repo_url: https://github.com/gypsychick61/subscription-auditor
   mcp_path: /mcp
-  why_this_app: Nobody knows what they actually pay per year, and agents have started granting standing ICRC-2 allowances on their owners' behalf — permissions that outlive the service they were granted for. This puts both in one registry your agent can read: what renews when, what quietly went up in price, what you stopped using months ago, and which spenders can still pull from your account. Read-only where money is concerned; it never approves, transfers, or cancels.
+  why_this_app: "Nobody knows what they actually pay per year, and agents have started granting standing ICRC-2 allowances on their owners' behalf — permissions that outlive the service they were granted for. This puts both in one registry your agent can read: what renews when, what quietly went up in price, what you stopped using months ago, and which spenders can still pull from your account. Read-only where money is concerned; it never approves, transfers, or cancels."
   key_features:
     - One registry for every recurring charge, off-chain and on-chain, with monthly and annual equivalents computed for any billing cycle.
     - Warns before it costs you - renewals inside your horizon, trials about to convert to paid, and prices that rose since you signed up.
