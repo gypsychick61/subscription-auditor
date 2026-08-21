@@ -107,13 +107,22 @@ the tool's error path (a ledger that doesn't answer) is worth seeing too.
 
 ## Mainnet
 
-Not deployed yet. When it is, ICForge builds from `icp.yaml` and upgrades the canister on push
-to `main`, and the store listing is a BYOC binding refreshed with:
+Canister `yi33e-byaaa-aaaab-agz4q-cai` — MCP endpoint
+`https://yi33e-byaaa-aaaab-agz4q-cai.icp0.io/mcp`.
+
+Deploys happen automatically: **ICForge builds from `icp.yaml` and upgrades the canister on
+push to `main`.** ICForge is the sole controller, so `dfx deploy --network ic` and
+`dfx canister --network ic status` will both be rejected (IC0542) — pushing is the only way
+to ship.
+
+The store listing is a BYOC (bring-your-own-canister) binding, not a registry-published
+version. After a deploy that changes the module hash, refresh the binding so the store
+tracks the live build:
 
 ```bash
 export DFX_WARNING=-mainnet_plaintext_identity
 dfx identity use debate-voter-3          # the only authorized namespace controller
-app-store-cli byoc register <canister-id>
+app-store-cli byoc register yi33e-byaaa-aaaab-agz4q-cai
 dfx identity use default
 ```
 

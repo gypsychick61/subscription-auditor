@@ -29,5 +29,5 @@ submission:
     banner_url: https://github.com/gypsychick61/subscription-auditor/releases/download/v0.1.0-assets/banner-subscription-auditor.webp
     gallery_images:
       - https://github.com/gypsychick61/subscription-auditor/releases/download/v0.1.0-assets/banner-subscription-auditor.webp
-  git_commit: PENDING_FIRST_COMMIT
+  git_commit: 26af7fb894d66c4b503ee3b7bbf096b8dbdc0db6
   wasm_path: .dfx/local/canisters/subscription_auditor/subscription_auditor.wasm
