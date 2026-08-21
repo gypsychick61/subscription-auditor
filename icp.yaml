@@ -1,0 +1,12 @@
+canisters:
+  - name: subscription_auditor
+    recipe:
+      type: "@dfinity/motoko@v4.0.0"
+      configuration:
+        main: src/main.mo
+        args: ""
+
+environments:
+  - name: ic
+    network: ic
+    canisters: [subscription_auditor]

@@ -1,0 +1,15 @@
+[package]
+name = "subscription-auditor"
+version = "0.1.0"
+description = "Subscription Auditor MCP server for the Prometheus Protocol app store — every recurring charge in one on-chain registry, with renewal and trial warnings, price-increase detection, and a live view of the ICRC-2 allowances your agents are standing on"
+
+[dependencies]
+base = "0.16.0"
+json = "1.4.0"
+map = "9.0.1"
+http-types = "1.0.1"
+ic = "3.2.0"
+mcp-motoko-sdk = "2.0.2"
+
+[toolchain]
+moc = "0.16.0"

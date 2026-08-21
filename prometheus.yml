@@ -1,0 +1,33 @@
+name: subscription-auditor
+namespace: io.github.gypsychick61.subscription-auditor
+title: Subscription Auditor
+version: 0.1.0
+description: Every recurring charge in one private on-chain registry — renewal and trial warnings, price-increase detection, unused-subscription flags, and a live read of the ICRC-2 allowances standing against your account.
+category: Finance
+mcp_path: /mcp
+repo_url: https://github.com/gypsychick61/subscription-auditor
+payment: null
+tags: [subscriptions, spending, budget, allowances, icrc2]
+submission:
+  name: Subscription Auditor
+  description: Every recurring charge in one private on-chain registry — renewal and trial warnings, price-increase detection, unused-subscription flags, and a live read of the ICRC-2 allowances standing against your account.
+  publisher: gypsychick61
+  category: Finance
+  deployment_type: global
+  repo_url: https://github.com/gypsychick61/subscription-auditor
+  mcp_path: /mcp
+  why_this_app: Nobody knows what they actually pay per year, and agents have started granting standing ICRC-2 allowances on their owners' behalf — permissions that outlive the service they were granted for. This puts both in one registry your agent can read: what renews when, what quietly went up in price, what you stopped using months ago, and which spenders can still pull from your account. Read-only where money is concerned; it never approves, transfers, or cancels.
+  key_features:
+    - One registry for every recurring charge, off-chain and on-chain, with monthly and annual equivalents computed for any billing cycle.
+    - Warns before it costs you - renewals inside your horizon, trials about to convert to paid, and prices that rose since you signed up.
+    - Flags what to drop - subscriptions unused for 60+ days and categories where you are paying for two of the same thing, each priced per year.
+    - Reads live ICRC-2 allowances off the ledger, so a standing permission on something you already cancelled cannot hide.
+    - Per-user private data keyed to your principal, secured with stable API keys minted on-chain.
+  tags: [subscriptions, spending, budget, allowances, icrc2]
+  visuals:
+    icon_url: https://github.com/gypsychick61/subscription-auditor/releases/download/v0.1.0-assets/icon-subscription-auditor.webp
+    banner_url: https://github.com/gypsychick61/subscription-auditor/releases/download/v0.1.0-assets/banner-subscription-auditor.webp
+    gallery_images:
+      - https://github.com/gypsychick61/subscription-auditor/releases/download/v0.1.0-assets/banner-subscription-auditor.webp
+  git_commit: PENDING_FIRST_COMMIT
+  wasm_path: .dfx/local/canisters/subscription_auditor/subscription_auditor.wasm
